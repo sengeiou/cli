@@ -1,0 +1,35 @@
+{
+  "name": "@babe0806/cli",
+  "version": "1.0.0",
+  "description": "快速生成工具类or库，组件库，uni-app组件库，hooks库，cli结构等，个人使用",
+  "bin": {
+    "babe": "./bin/babe.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "clipboardy": "^2.2.0",
+    "commander": "^5.0.0",
+    "glob": "^7.1.6",
+    "inquirer": "^7.1.0",
+    "mkdirp": "^1.0.3",
+    "yargs-parser": "^18.1.1",
+    "yeoman-generator": "^4.7.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yemuguliunian/cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yemuguliunian/cli/issues"
+  },
+  "homepage": "https://github.com/yemuguliunian/cli#readme"
+}

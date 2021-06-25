@@ -1,0 +1,17 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "工具类",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "father build",
+    "lint": "eslint src",
+    "test": "father test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "father": "^2.30.6",
+    "power-assert": "^1.6.1"
+  }
+}
