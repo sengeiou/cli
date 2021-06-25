@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Logs
+*.log
+
+# lock
+*.lock
+
+# dist
+lib
+docs-dist
+
+# cache
+.umi
