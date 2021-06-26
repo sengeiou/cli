@@ -1,0 +1,16 @@
+.vtx-input-textarea {
+    &::after {
+        float: right;
+        color: rgba(0, 0, 0, 0.45);
+        white-space: nowrap;
+        content: attr(data-count);
+        pointer-events: none;
+    }
+}
+
+.ant-input-affix-wrapper .ant-input-suffix {
+    color: rgba(0, 0, 0, 0.45);
+}
+.ant-input-affix-wrapper .ant-input:not(:last-child) {
+    padding-right: 48px;
+}

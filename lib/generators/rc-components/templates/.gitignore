@@ -1,0 +1,22 @@
+# dependencies
+/node_modules
+
+# production
+/dist
+/docs-dist
+
+# npm
+/lib
+
+# misc
+npm-debug.log*
+
+.umi
+
+*.lock
+
+#cache
+.cache
+.docz
+
+.DS_Store

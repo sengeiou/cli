@@ -1,0 +1,15 @@
+lib
+tests
+package.json
+.stylelintrc.json
+.babelrc
+node_modules
+.cache
+*.lock
+.editorconfig
+.eslintignore
+.gitignore
+.npmignore
+.prettierignore
+*.snap
+.gitlab-ci.yml
