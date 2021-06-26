@@ -1,0 +1,58 @@
+{
+  "name": "@vtx/hooks",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "dumi dev",
+    "build": "gulp",
+    "docs:build": "dumi build",
+    "lint": "eslint --ignore-pattern **/__tests__/* --ignore-pattern **/demo/* \"src/**/*.{ts,tsx}\"",
+    "release": "npm run build && npm publish",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
+  },
+  "files": [
+    "lib",
+    "es",
+    "package.json",
+    "README.md"
+  ],
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "dayjs": "^1.9.6"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "@umijs/fabric": "^2.6.2",
+    "antd": "3.26.19",
+    "axios": "^0.21.0",
+    "babel-plugin-import": "^1.13.3",
+    "del": "^6.0.0",
+    "dumi": "^1.0.10",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}

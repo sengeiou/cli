@@ -1,0 +1,9 @@
+node_modules
+
+jsconfig.json
+
+gulpfile.js
+
+es
+lib
+**/demo
