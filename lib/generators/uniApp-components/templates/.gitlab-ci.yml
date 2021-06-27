@@ -1,0 +1,19 @@
+pages:
+  cache:
+    paths:
+    - node_modules/
+
+  script:
+  - yarn install --registry=https://registry.npm.taobao.org --pure-lockfile
+  - yarn build
+  - yarn example:build
+  - mv doc-dist public
+  - mv dist/build/h5 public/example
+
+  artifacts:
+    paths:
+    - public
+  tags:
+    - node-docker
+  only:
+    - master

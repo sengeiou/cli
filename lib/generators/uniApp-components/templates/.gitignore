@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+
+# production
+dist
+doc-dist
+example-dist
+
+# npm
+lib
+
+# misc
+npm-debug.log*
+
+*.lock
+
+#cache
+.cache
+
+.DS_Store

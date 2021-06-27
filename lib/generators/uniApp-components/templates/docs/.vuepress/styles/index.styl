@@ -1,0 +1,25 @@
+.page {
+    padding-right: 350px;
+}
+@media(max-width: 1300px) {
+    .demo-page {
+        display: none;
+    }
+    .page {
+        padding-right: 0px;
+    }
+}
+
+.theme-container {
+    table th {
+        white-space: nowrap;
+    }
+    table td {
+        &:first-child {
+            color: #003a8c;
+        }
+        &:nth-child(3) {
+            color: #c41d7f;
+        }
+    }
+}
