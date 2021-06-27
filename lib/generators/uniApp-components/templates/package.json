@@ -2,9 +2,6 @@
   "name": "@vtx/ember",
   "version": "0.0.1",
   "description": "uni-app组件库",
-  "files": [
-    "components"
-  ],
   "scripts": {
     "start": "vuepress dev docs",
     "build": "vuepress build docs",

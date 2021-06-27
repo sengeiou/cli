@@ -9,12 +9,6 @@
     "release": "npm run build && npm publish",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\""
   },
-  "files": [
-    "lib",
-    "es",
-    "package.json",
-    "README.md"
-  ],
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "types": "./lib/index.d.ts",
