@@ -8,6 +8,10 @@
 npx @babe0806/cli my-app
 
 ? Select the boilerplate type (Use arrow keys)
-❯ cli        # 脚手工具
-  tools      # 工具类
+❯ cli                   # 脚手工具
+  rc-components         # react 组件库
+  rc-hooks              # react hooks库
+  tool                  # 工具类
+  uniApp-components     # uni-app 组件库
+  utils                 # 工具库
 ```
