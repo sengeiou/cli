@@ -9,7 +9,8 @@
     "example:build": "cross-env NODE_ENV=production UNI_PLATFORM=h5 vue-cli-service uni-build",
     "lint": "npm run lint:script && npm run lint:style",
     "lint:script": "eslint components --ext .vue,.js",
-    "lint:style": "stylelint components/**/*.less --syntax less --aei",
+    "lint:style": "stylelint components/**/*.{vue,less,css,scss}",
+    "stylelint:fix": "stylelint components/**/*.{vue,less,css,scss} --fix",
     "release": "release-it --no-npm.publish",
     "version": "npm run changelog && git add CHANGELOG.md",
     "changelog": "conventional-changelog -p custom-config -i CHANGELOG.md -s -r 0"
@@ -46,21 +47,21 @@
     "@commitlint/config-conventional": "^8.3.4",
     "@dcloudio/types": "*",
     "@dcloudio/uni-app-plus": "^2.0.0-31920210609001",
+    "@dcloudio/uni-automator": "^2.0.0-31920210609001",
+    "@dcloudio/uni-cli-shared": "^2.0.0-31920210609001",
     "@dcloudio/uni-h5": "^2.0.0-31920210609001",
     "@dcloudio/uni-helper-json": "*",
     "@dcloudio/uni-i18n": "^2.0.0-31920210609001",
+    "@dcloudio/uni-migration": "^2.0.0-31920210609001",
     "@dcloudio/uni-mp-vue": "^2.0.0-31920210609001",
     "@dcloudio/uni-stat": "^2.0.0-31920210609001",
-    "@dcloudio/uni-automator": "^2.0.0-31920210609001",
-    "@dcloudio/uni-cli-shared": "^2.0.0-31920210609001",
-    "@dcloudio/uni-migration": "^2.0.0-31920210609001",
     "@dcloudio/uni-template-compiler": "^2.0.0-31920210609001",
     "@dcloudio/vue-cli-plugin-hbuilderx": "^2.0.0-31920210609001",
     "@dcloudio/vue-cli-plugin-uni": "^2.0.0-31920210609001",
     "@dcloudio/vue-cli-plugin-uni-optimize": "^2.0.0-31920210609001",
     "@dcloudio/webpack-uni-mp-loader": "^2.0.0-31920210609001",
     "@dcloudio/webpack-uni-pages-loader": "^2.0.0-31920210609001",
-    "@vue/cli-plugin-babel": "~4.5.0",   
+    "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "^4.5.13",
     "@vue/shared": "^3.0.0",
     "@vuepress/plugin-back-to-top": "^1.3.1",
@@ -91,7 +92,7 @@
     "vuepress": "^1.8.2"
   },
   "dependencies": {
-    "vue": "^2.6.11",
-    "uview-ui": "^1.8.4"
+    "uview-ui": "^1.8.4",
+    "vue": "^2.6.11"
   }
 }

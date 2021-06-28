@@ -1,25 +1,26 @@
 {
-	"easycom": {
-        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    "easycom": {
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+        "^v-(.*)": "ember/components/v-$1/v-$1.vue"
     },
-	"pages": [
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationStyle": "custom"
-			}
-		},
-		{
-			"path": "pages/v-text/index",
-			"style": {
-				"navigationStyle": "custom" 
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+    "pages": [
+        {
+            "path": "pages/index/index",
+            "style": {
+                "navigationStyle": "custom"
+            }
+        },
+        {
+            "path": "pages/v-multiple-select/index",
+            "style": {
+                "navigationStyle": "custom"
+            }
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "uni-app",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    }
 }

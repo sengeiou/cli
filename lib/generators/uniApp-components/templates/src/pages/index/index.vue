@@ -7,10 +7,15 @@
         <div class="demo-home-nav">
             <div class="demo-home-nav__title">组件</div>
             <div class="demo-home-nav__group">
-				<view class="demo-home-nav__block" v-for="item in components" :key="item.key" @click="to(item.path)">
-					{{ item.title }}
-					<u-icon name="arrow-right" class="demo-home-nav__icon "></u-icon>
-				</view>
+                <view
+                    class="demo-home-nav__block"
+                    v-for="item in components"
+                    :key="item.key"
+                    @click="to(item.path)"
+                >
+                    {{ item.title }}
+                    <u-icon name="arrow-right" class="demo-home-nav__icon "></u-icon>
+                </view>
             </div>
         </div>
     </div>
@@ -22,19 +27,19 @@ export default {
         return {
             components: [
                 {
-                    key: 'text',
-                    title: 'Text 文本',
-                    path: '/pages/v-text/index',
+                    key: 'MultipleSelect',
+                    title: 'MultipleSelect 下拉多选',
+                    path: '/pages/v-multiple-select/index',
                 },
             ],
         };
     },
-    
+
     methods: {
         to(path) {
-            uni.navigateTo({url: path})
-        }
-    }
+            uni.navigateTo({ url: path });
+        },
+    },
 };
 </script>
 
